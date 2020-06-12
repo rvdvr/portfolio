@@ -1,0 +1,12 @@
+.about {
+  margin-bottom: 100px;
+
+  &__text {
+    width: 70%;
+    font-size: 25px;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,4 +1,5 @@
 // adjustment vars
+$blue: #364EA5;
 
 
 // adjustment styles
@@ -27,6 +28,8 @@ img {
 }
 
 a {
+	color: $blue;
+
 	text-decoration: none;
 	&:hover {
 		text-decoration: none;
@@ -43,6 +46,18 @@ ul li {
 }
 
 .container {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 50px;
 	position: relative;
+	box-sizing: border-box;
+}
+
+.h2 {
+	font-size: 50px;
+	line-height: 65px;
+	@include font(bold);
+	margin: 0;
+	margin-bottom: 40px;
 }
 

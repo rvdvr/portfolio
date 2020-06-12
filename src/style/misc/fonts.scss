@@ -5,9 +5,15 @@
 //     font-style: normal;
 // }
 
-// @mixin font($style: regular) {
-//     @if $style == regular {
-//         font-family: 'century_gothicss', Arial, sans-serif;
-//         font-weight: 500;
-//     }
-// }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+@mixin font($style: regular) {
+    @if $style == regular {
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 500;
+    }
+    @if $style == bold {
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 700;
+    }
+}

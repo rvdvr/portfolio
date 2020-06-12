@@ -1,0 +1,36 @@
+.projects {
+  background: $blue;
+  padding: 100px 0;
+
+  &__title {
+    color: #fff;
+  }
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+
+  &__prev {
+    width: 73%;
+  }
+
+  &__desc {
+    width: 25%;
+    color: #fff;
+
+    h3 {
+      font-size: 28px;
+      @include font(bold);
+      line-height: 35px;
+      letter-spacing: 1px;
+      margin: 0;
+      margin-bottom: 30px;
+    }
+
+    span {
+      font-size: 19px;
+      line-height: 25px;
+    }
+  }
+}
