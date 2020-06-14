@@ -2,22 +2,54 @@
   background: $blue;
   padding: 100px 0;
 
+  @include phone() {
+    padding: 80px 0;
+	}
+
   &__title {
     color: #fff;
+    margin-bottom: 70px;
   }
 }
 
 .project {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 80px;
+
+  @include phone() {
+    flex-wrap: wrap;
+	}
 
   &__prev {
-    width: 73%;
+    width: 70%;
+
+    @include phone() {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    a {
+      &:hover {
+        img {
+          box-shadow: 0px 16px 32px rgba($orange, 0.24), 0px 0px 1px rgba($orange, 0.48);
+        }
+      }
+    }
+
+    img {
+      box-shadow: 0px 16px 32px rgba(75, 77, 82, 0.24), 0px 0px 1px rgba(75, 77, 82, 0.48);
+      transition: .3s;
+    }
   }
 
   &__desc {
     width: 25%;
     color: #fff;
+
+    @include phone() {
+      width: 100%;
+    }
 
     h3 {
       font-size: 28px;
@@ -26,6 +58,17 @@
       letter-spacing: 1px;
       margin: 0;
       margin-bottom: 30px;
+
+      a {
+        color: #fff;
+        transition: color .3s;
+        text-decoration: underline;
+
+        &:hover {
+          color: $orange;
+        }
+      }
+
     }
 
     span {

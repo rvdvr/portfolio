@@ -1,3 +1,47 @@
-section.contacts
+section#contacts.contacts
   .container
     h2.h2.contacts__title Связаться со мной
+    .contacts__list
+      .contacts__item
+        span.contacts__item-title В мессенджере
+        .messangers
+          a(href="#").messanger.messanger--tg
+          a(href="#").messanger.messanger--viber
+          a(href="#").messanger.messanger--whatsapp
+      .contacts__item
+        span.contacts__item-title По почте
+        a(href="mailto:avradantsev@yandex.ru") avradantsev@yandex.ru
+      .contacts__item
+        span.contacts__item-title Через форму на сайте
+        form.contacts__form
+          span.contacts__item-subtitle Где удобнее общаться?
+          .contacts-form__radio
+            .contacts-form__radio-item
+              label(for="tg").contacts-form__radio-label.contacts-form__radio-label--tg
+              input#tg(type="radio", name="message").contacts-form__radio-btn
+            .contacts-form__radio-item
+              label(for="viber").contacts-form__radio-label.contacts-form__radio-label--viber
+              input#viber(type="radio", name="message").contacts-form__radio-btn
+            .contacts-form__radio-item
+              label(for="whatsapp").contacts-form__radio-label.contacts-form__radio-label--whatsapp
+              input#whatsapp(type="radio", name="message").contacts-form__radio-btn
+            .contacts-form__radio-item
+              label(for="gmail").contacts-form__radio-label.contacts-form__radio-label--gmail
+              input#gmail(type="radio", name="message", checked).contacts-form__radio-btn
+          .contacts-form__fields
+            #name.contacts-form__field
+              label Имя<sup>*</sup>
+              input(type="text" required)
+            #email.contacts-form__field
+              label E-mail<sup>*</sup>
+              input(type="email" required)
+            #phone.contacts-form__field
+              label Телефон<sup>*</sup>
+              input(type="phone" name="ph" required)
+            .contacts-form__field
+              label Сообщение 
+              textarea(name="textarea", rows="5")(type="text")
+          button.contacts-form__submit Отправить
+
+
+

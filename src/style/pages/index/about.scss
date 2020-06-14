@@ -1,9 +1,17 @@
 .about {
   margin-bottom: 100px;
 
+  @include phone() {
+    margin-bottom: 80px;
+	}
+
   &__text {
     width: 70%;
     font-size: 25px;
+
+    @include phone() {
+      width: 100%;
+    }
 
     a {
       text-decoration: underline;

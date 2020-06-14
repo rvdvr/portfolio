@@ -1,5 +1,6 @@
 // adjustment vars
 $blue: #364EA5;
+$orange: #ff9900;
 
 
 // adjustment styles
@@ -51,6 +52,10 @@ ul li {
 	padding: 0 50px;
 	position: relative;
 	box-sizing: border-box;
+
+	@include phone() {
+		padding: 0 20px;	
+	}
 }
 
 .h2 {
@@ -59,5 +64,10 @@ ul li {
 	@include font(bold);
 	margin: 0;
 	margin-bottom: 40px;
+
+	@include phone() {
+		font-size: 40px;
+		line-height: 56px;	
+	}
 }
 
